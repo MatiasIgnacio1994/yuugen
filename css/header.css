@@ -1,0 +1,67 @@
+:root {
+    --negro: #2b2b2b;
+    --rosado: #fc8888;
+    --anchoHeader: 60px;
+    --colorTextoMenu: #7A7A7A;
+    --fontSizeMenu: 18px;
+}
+
+.cabecera {
+    width: 100%;
+    height: var(--anchoHeader);
+    background-color: var(--negro);
+    position: fixed;
+}
+
+.logo-menu {
+    width: 80%;
+    height: var(--anchoHeader);;
+    margin: auto;
+}
+
+.logo-container {
+    width: 35%;
+    height: var(--anchoHeader);
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+.logo {
+    width: 50%;
+}
+
+.nav {
+    width: 65%;
+    height: var(--anchoHeader);
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    color: var(--colorTextoMenu);
+    font-size: var(--fontSizeMenu);
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px var(--rosado),
+                0 0 20px var(--rosado),
+                0 0 40px var(--rosado),
+                0 0 80px var(--rosado),
+                0 0 120px var(--rosado),
+                0 0 180px var(--rosado),
+                0 0 200px var(--rosado);
+    letter-spacing: 2px;
+    transition: .3s;
+}
